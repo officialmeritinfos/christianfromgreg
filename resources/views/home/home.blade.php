@@ -471,8 +471,23 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12">
                     <div class="single-blog-post">
-                        <rssapp-wall id="38kEBNRCi1vuK60z"></rssapp-wall>
-                        <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                                {
+                                    "feedMode": "all_symbols",
+                                    "isTransparent": false,
+                                    "displayMode": "regular",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "colorTheme": "light",
+                                    "locale": "en"
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
                     </div>
                 </div>
 

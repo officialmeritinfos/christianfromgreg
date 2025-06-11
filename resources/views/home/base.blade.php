@@ -171,12 +171,14 @@
         </a>
     </div>
     @endif
+    @if (!empty($web->telegram))
     <div class="telegram-float-widget">
-        <a href="https://t.me/aspreyfund" target="_blank">
+        <a href="{{ $web->telegram }}" target="_blank">
             <img src="https://cdn3.iconfinder.com/data/icons/social-icons-33/512/Telegram-512.png"
                  alt="" width="50">
         </a>
     </div>
+    @endif
     <!-- Start Footer Area -->
     <footer class="footer-area">
         <div class="container">

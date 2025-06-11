@@ -3,7 +3,7 @@
 @slot('header')
 @component('mail::header', ['url' => config('app.url')])
 {{--{{ config('app.name') }}--}}
-<img src="{{asset('home/images/asprey.png')}}" class="logo" alt="{{config('app.name')}}" style="width:100px;">
+<img src="{{asset('home/images/somarphoenix.png')}}" class="logo" alt="{{config('app.name')}}" style="width:100px;">
 @endcomponent
 @endslot
 
@@ -22,10 +22,6 @@
 {{-- Footer --}}
 @slot('footer')
 @component('mail::footer')
-    <p>
-        {{ config('app.name') }} is a live company located at {{config('app.companyAddress')}}
-        with License number of {{config('app.companyLicence')}}
-    </p>
    <p>
        © {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')
    </p>
